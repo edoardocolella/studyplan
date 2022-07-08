@@ -1,0 +1,27 @@
+td.red {
+    color: red
+}
+
+th.red {
+    color: red
+}
+
+.inline {
+    display: inline-block
+}
+
+.center {
+    text-align: center
+}
+
+.grey {
+    background-color: #ebebeb
+}
+
+.twentyfive{
+    width: 25%;
+}
+
+.fifty{
+    width: 50%;
+}
