@@ -1,7 +1,7 @@
 const Exam = require("./model/exam")
 const Student = require("./model/student")
 
-const SERVER_URL = 'http://localhost:3001'
+const SERVER_URL = 'https://study-plan-back.onrender.com/'
 
 
 const getAllExams = async () => {
