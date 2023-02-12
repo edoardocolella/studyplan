@@ -18,7 +18,7 @@ app.use(express.json()); // for parsing json request body
 
 // set up and enable cors
 const corsOptions = {
-  origin: 'https://study-plan-front.onrender.com/',
+  origin: 'https://study-plan-front.onrender.com',
   credentials: true,
 };
 app.use(cors(corsOptions));
