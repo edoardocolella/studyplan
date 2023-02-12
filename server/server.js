@@ -21,7 +21,7 @@ const corsOptions = {
   origin: 'https://study-plan-front.onrender.com',
   credentials: true,
 };
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 // Passport: set-up the local strategy
 passport.use(new LocalStrategy(async function verify(username, password, cb) {
