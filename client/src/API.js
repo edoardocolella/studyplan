@@ -1,5 +1,8 @@
-const Exam = require("./model/exam")
-const Student = require("./model/student")
+//const Exam = require("./model/exam")
+//const Student = require("./model/student")
+
+import {Exam} from "./model/exam"
+import {Student} from "./model/student"
 
 const SERVER_URL = 'https://study-plan-back.onrender.com/'
 
@@ -119,8 +122,8 @@ const logOut = async () => {
         return null;
 }
 
-const API = {
+export const API = {
     getAllExams, logIn, getUserInfo,
     logOut, getExamsByUser, savePlan, deletePlan
 }
-export default API;
+//module.exports =  {API};

@@ -1,4 +1,4 @@
-class Student {
+export class Student {
     constructor(code, email, name, surname, typeOfPlan) {
         this.code = code;
         this.email = email;
@@ -8,4 +8,4 @@ class Student {
     }
 }
 
-module.exports = Student;
+//module.exports = Student;

@@ -1,4 +1,4 @@
-class Exam {
+export class Exam {
     constructor(code, name, credits, maxStudents, preparatoryCourse, enrolled) {
         this.code = code;
         this.name = name;
@@ -17,4 +17,4 @@ class Exam {
 
 }
 
-module.exports = Exam;
+//module.exports = Exam;

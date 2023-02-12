@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet, useNavigate } from 'react-router-dom';
 import { Container, Row, Alert } from 'react-bootstrap';
 
-import API from './API';
+import {API} from './API';
 import MyNavbar from './components/customNavbar';
 import ExamTable from './components/examTable';
 import { LoginForm } from './components/customAuthComponents';
