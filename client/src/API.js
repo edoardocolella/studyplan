@@ -4,7 +4,7 @@
 import {Exam} from "./model/exam"
 import {Student} from "./model/student"
 
-const SERVER_URL = 'https://study-plan-back.onrender.com/'
+const SERVER_URL = 'https://study-plan-back.onrender.com'
 
 
 const getAllExams = async () => {
