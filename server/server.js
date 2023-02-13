@@ -18,9 +18,7 @@ app.use(express.json()); // for parsing json request body
 
 // set up and enable cors
 const corsOptions = {
-  origin: 'https://study-plan-front.onrender.com',
-  methods: ["GET", "PSOT", "DELETE", "UPDATE", "PUT", "PATCH"],
-  preflightContinue: true,
+  origin: 'http://localhost:3000',
   credentials: true,
 };
 app.use(cors(corsOptions));
