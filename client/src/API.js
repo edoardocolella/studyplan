@@ -44,11 +44,11 @@ const getExamsByUser = async () => {
 
 const savePlan = async (examsCodes, typeOfPlan) => {
     const response = await fetch(SERVER_URL + '/api/plan/' + typeOfPlan, {
+        credentials: 'include',
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
         },
-        credentials: 'include',
         body: JSON.stringify({ examsCodes: examsCodes })
     })
     if (response.ok) {
@@ -66,11 +66,11 @@ const savePlan = async (examsCodes, typeOfPlan) => {
 
 const deletePlan = async () => {
     const response = await fetch(SERVER_URL + '/api/plan/', {
+        credentials: 'include',
         method: "DELETE",
         headers: {
             'Content-Type': 'application/json'
         },
-        credentials: 'include',
     })
 
     if (response.ok)
@@ -83,11 +83,11 @@ const deletePlan = async () => {
 
 const logIn = async (credentials) => {
     const response = await fetch(SERVER_URL + '/api/sessions', {
+        credentials: 'include',
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
         },
-        credentials: 'include',
         body: JSON.stringify(credentials)
 
     });
@@ -115,8 +115,8 @@ const getUserInfo = async () => {
 
 const logOut = async () => {
     const response = await fetch(SERVER_URL + '/api/sessions/current', {
-        method: 'DELETE',
-        credentials: 'include'
+        credentials: 'include',
+        method: 'DELETE'
     });
     if (response.ok)
         return null;
