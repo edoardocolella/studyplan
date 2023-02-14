@@ -16,6 +16,9 @@ function ExamTable(props) {
         <br />
         <h1 className="center">Exam Table</h1>
         <br />
+        <h3>This website is only a public demo. Performance is limited.</h3>
+        <br />
+
         <Row>
             <Col sm={1}></Col>
             <Col sm={10}>
